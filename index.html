@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>temperature converter</title>
+  <link rel="stylesheet" href="">
+</head>
+<body id = "temperatureConverterForm" onkeydown = "if (event.keyCode == 13)document.getElementById('convertedTemp').click()"> <!-- this is basically saying if the enter key is pressed (13 is the code for enter key), pull the thing that happens when the 'converted temp' button is clicked. I moved this from the text box to the entire body so you could press enter anywhere. -->
+  <h1>Temperature Converter</h1>
+  <form>
+    <fieldset>
+      <legend>Temperature to convert</legend>
+      <input type="text" name="currentTemp" id = "currentTemp" value=""> 
+    </fieldset>
+    <fieldset>
+      <legend>Temperature To convert to</legend>
+      <input type = "radio" name = "scale" id = "fahrenheit">Fahrenheit
+      <input type = "radio" name = "scale" id = "celsius">Celsius
+    </fieldset>
+    <button id="converter" type = "submit">Submit!</button>
+    <button id="clearer">Clear!</button>
+  </form>
+  <h2 id = "convertedTemp"></h2>
+  <script src="tempConverter.js"></script>
+</body>
+</html>
+
+
+
